@@ -1,0 +1,10 @@
+node_modules/
+.next/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+# Nunca subir estados de cuenta ni exportaciones reales
+*.pdf
+exports/
