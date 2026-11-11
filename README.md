@@ -35,7 +35,10 @@ The plan for turning the prototype into a full app is in [`CLAUDE.md`](CLAUDE.md
 1. **Next.js + TypeScript** port, with the domain logic (cycles, MSI, shares) extracted into a tested pure module.
 2. **Supabase** for auth and storage, with row-level security so each user only sees their own data.
 3. **Statement import**: upload a bank statement PDF and have an LLM extract the movements, then reconcile the totals against the statement before saving.
-4. Bank presets (BBVA, HSBC, Banorte, Nu, etc.) for cut-off and due-date rules.
+4. Bank presets (BBVA, HSBC, Banorte, Nu, etc.) for cut-off and due-date rules, and onboarding for new users.
+5. Private beta on the web with a small group of users.
+6. **iOS and Android app** with payment-date notifications, Face ID unlock and a home screen widget.
+7. Automatic capture: Apple Wallet transaction automations on iOS, bank notification reading on Android, and purchase alert emails, all reconciled against the monthly statement.
 
 ## Design notes
 
